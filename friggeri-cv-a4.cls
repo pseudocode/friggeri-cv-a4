@@ -24,7 +24,7 @@
 \definecolor{white}{RGB}{255,255,255}
 
 \definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{gray}{HTML}{32525F}
 \definecolor{lightgray}{HTML}{999999}
 
 \definecolor{green}{HTML}{C2E15F}
@@ -32,6 +32,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{yellow}{HTML}{FEF9E3}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -69,23 +70,25 @@
 \RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont
-[BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf,
-BoldItalicFont=texgyreheros-bolditalic.otf]
-{texgyreheros-regular.otf}
-\newfontfamily\thinfont[]{Lato-Light.ttf}
-\newfontfamily\headingfont[]{texgyreheros-bold.otf}
+[BoldFont=Merriweather-Bold.ttf,
+ItalicFont=Merriweather-Italic.ttf,
+BoldItalicFont=Merriweather-BoldItalic.ttf]
+{Merriweather-Regular.ttf}
+
+\newfontfamily\thinfont[]{Dosis-ExtraLight.ttf}
+\newfontfamily\headingfont[]{Dosis-ExtraBold.ttf}
+\newfontfamily\headingfontalt[]{Dosis-SemiBold.ttf}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
 [Mapping=tex-text, Color=textcolor,
-BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf,
-BoldItalicFont=texgyreheros-bolditalic.otf
+BoldFont=Merriweather-Bold.ttf,
+ItalicFont=Merriweather-Italic.ttf,
+BoldItalicFont=Merriweather-BoldItalic.ttf
 ]
-{texgyreheros-regular.otf}
+{Merriweather-Regular.ttf}
 
-\setmathfont{texgyreheros-regular.otf}
+\setmathfont{Merriweather-Regular.ttf}
 %%%
 
 %%%%%%%%%%
@@ -105,7 +108,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\thinfont #1}{\headingfontalt  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%

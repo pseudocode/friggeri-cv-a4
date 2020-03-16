@@ -7,3 +7,4 @@ cv.bbl
 cv.bcf
 cv.run.xml
 *.pdf
+.DS_Store
