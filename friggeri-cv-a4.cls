@@ -164,10 +164,10 @@ BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        fantastic7\or%
-        fantastic6\or%
-        fantastic5\or%
+        %fantastic7\or%
         fantastic3\or%
+        fantastic5\or%
+        fantastic8\or%
         fantastic2\or%
         fantastic1\else%
         headercolor\fi%
