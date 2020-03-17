@@ -70,10 +70,10 @@
 \RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont
-[BoldFont=Merriweather-Bold.ttf,
-ItalicFont=Merriweather-Italic.ttf,
-BoldItalicFont=Merriweather-BoldItalic.ttf]
-{Merriweather-Regular.ttf}
+[BoldFont=YanoneKaffeesatz-Bold.ttf,
+ItalicFont=YanoneKaffeesatz-Light.ttf,
+BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf]
+{YanoneKaffeesatz-Regular.ttf}
 
 \newfontfamily\thinfont[]{Dosis-ExtraLight.ttf}
 \newfontfamily\headingfont[]{Dosis-ExtraBold.ttf}
@@ -82,13 +82,13 @@ BoldItalicFont=Merriweather-BoldItalic.ttf]
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
 [Mapping=tex-text, Color=textcolor,
-BoldFont=Merriweather-Bold.ttf,
-ItalicFont=Merriweather-Italic.ttf,
-BoldItalicFont=Merriweather-BoldItalic.ttf
+BoldFont=YanoneKaffeesatz-Bold.ttf,
+ItalicFont=YanoneKaffeesatz-Light.ttf,
+BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf
 ]
-{Merriweather-Regular.ttf}
+{YanoneKaffeesatz-Regular.ttf}
 
-\setmathfont{Merriweather-Regular.ttf}
+\setmathfont{YanoneKaffeesatz-Regular.ttf}
 %%%
 
 %%%%%%%%%%
