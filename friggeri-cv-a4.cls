@@ -34,6 +34,24 @@
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{yellow}{HTML}{FEF9E3}
 
+\definecolor{nova1}{RGB}{26,8,14}
+\definecolor{nova2}{RGB}{61,32,59}
+\definecolor{nova3}{RGB}{84,50,70}
+\definecolor{nova4}{RGB}{119,58,77}
+\definecolor{nova5}{RGB}{167,82,82}
+\definecolor{nova6}{RGB}{207,120,98}
+\definecolor{nova7}{RGB}{255,206,156}
+
+\definecolor{fantastic1}{RGB}{219,219,221}
+\definecolor{fantastic2}{RGB}{156,142,142}
+\definecolor{fantastic3}{RGB}{82,75,163}
+\definecolor{fantastic4}{RGB}{31,30,35}
+\definecolor{fantastic5}{RGB}{106,146,84}
+\definecolor{fantastic6}{RGB}{220,172,108}
+\definecolor{fantastic7}{RGB}{229,86,86}
+\definecolor{fantastic8}{RGB}{115,73,60}
+
+
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
@@ -44,7 +62,7 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
+  \colorlet{fillheader}{fantastic7}
   \colorlet{header}{white}
 \fi
 \colorlet{textcolor}{gray}
@@ -125,23 +143,38 @@ BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
+% \newcounter{colorCounter}
+% \def\@sectioncolor#1#2#3{%
+%   {%
+%     \color{%
+%       \ifcase\value{colorCounter}%
+%         blue\or%
+%         red\or%
+%         orange\or%
+%         green\or%
+%         purple\or%
+%         brown\else%
+%         headercolor\fi%
+%     } #1#2#3%
+%   }%
+%   \stepcounter{colorCounter}%
+% }
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        brown\else%
+        fantastic7\or%
+        fantastic6\or%
+        fantastic5\or%
+        fantastic3\or%
+        fantastic2\or%
+        fantastic1\else%
         headercolor\fi%
     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
 }
-
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
@@ -181,7 +214,7 @@ BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf
   \parbox[t]{2cm}{#1}&\parbox[t]{11.3cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=fantastic3} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
