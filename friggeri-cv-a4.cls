@@ -385,6 +385,7 @@ BoldItalicFont=YanoneKaffeesatz-SemiBold.ttf
 \RequirePackage[left=6.1cm,top=2cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
+    hidelinks=true
     colorlinks=false,       
     linkcolor=red,          
     citecolor=red,        
