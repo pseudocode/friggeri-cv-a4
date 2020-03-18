@@ -9,6 +9,13 @@ pdf:
 	#biber cv
 	xelatex cv
 
+pdf_en:
+	xelatex cv_en
+	#biber cv
+	xelatex cv_en
+
+en: pdf_en clean
+
 ## Cleanup build files
 clean:
 	rm -rf cv.log cv.out cv.aux cv.blg cv.bbl cv.bcf cv.run.xml
